@@ -1,4 +1,4 @@
-'use strict'
-console.log('Я');
-console.log('Учу');
-console.log('JS');
+let userName = 'Вася';
+let user = 'Никитос';
+user = userName;
+console.log (user)

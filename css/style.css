@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -83,4 +84,17 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  line-height: 50px;
+  padding: 50px;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+}
+
+.yellow {
+  color: yellow;
 }
