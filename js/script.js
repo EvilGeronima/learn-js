@@ -1,4 +1,2 @@
-let userName = 'Вася';
-let user = 'Никитос';
-user = userName;
-console.log (user)
+let firstTest = "Hello World!";
+console.log(firstTest);
