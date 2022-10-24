@@ -1,6 +1,9 @@
-let firstTest = "Hello World!";
-console.log(firstTest);
+// 1. Переменные
 
-const name = "Roman";
+let name = 'Roman'
+const lastName = 'Troychenko'
+let age = 18
 
-console.log(name)
+age = 20
+
+console.log(age)
