@@ -109,9 +109,14 @@
 // }
 // logInfoAbout('Роман', 2023)
 
-// 9 Массивы
+// // 9 Массивы
 
-const cars = ['Мазда', 'Мерседес', 'Киа']
-// const cars = new Array('Мазда', 'Мерседес', 'Киа')
+// const cars = ['Мазда', 'Мерседес', 'Киа']
+// // const cars = new Array('Мазда', 'Мерседес', 'Киа')
 
-console.log(cars[1])
+// console.log(cars[1])
+// console.log(cars.length)
+
+// cars[0] = 'Порш'
+// cars[cars.length] = 'Мазда'
+// console.log(cars)
