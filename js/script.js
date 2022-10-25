@@ -79,7 +79,7 @@
 // // 	console.log ('Все не готово')
 // // }
 
-// // Тернарное выражение 
+// // Тернарное выражение
 // isReady ? console.log('Все готово') : console.log('Все не готово')
 
 // const num1 = 42 // number
@@ -91,3 +91,27 @@
 
 // 8 Функции
 
+// function calculateAge(year) {
+// 	return 2022 - year
+// }
+
+// // console.log(calculateAge(2001))
+
+// function logInfoAbout(name, year) {
+// 	const age = calculateAge(year)
+
+// 	if (age > 0) {
+// 		console.log('Человек по имени ' + name + ' сейчас имеет возвраст' + age)
+// 	} else {
+// 		console.log('Вообще то это уже будущее')
+// 	}
+
+// }
+// logInfoAbout('Роман', 2023)
+
+// 9 Массивы
+
+const cars = ['Мазда', 'Мерседес', 'Киа']
+// const cars = new Array('Мазда', 'Мерседес', 'Киа')
+
+console.log(cars[1])
