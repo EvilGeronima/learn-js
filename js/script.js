@@ -58,6 +58,36 @@
 
 // const isFullAge = (currentYear - birthYear) >= fullAge
 // console.log(isFullAge)
- // 6 Условные операторы
 
-const courseStatus = 'Pending' 
+// 6 Условные операторы
+
+// const courseStatus = 'pending'
+
+// // if (courseStatus === 'ready') {
+// // 	console.log('Курс уже готов и его можно проходить')
+// // } else if (courseStatus === 'pending') {
+// // 	console.log('Курс пока находится в разработке')
+// // } else {
+// // 	console.log('Курс не получился')
+// // }
+
+// const isReady = true
+
+// // if (isReady) {
+// // 	console.log('Все готово')
+// // } else {
+// // 	console.log ('Все не готово')
+// // }
+
+// // Тернарное выражение 
+// isReady ? console.log('Все готово') : console.log('Все не готово')
+
+// const num1 = 42 // number
+// const num2 = '42' // string
+
+// console.log(num1 === num2)
+
+// 7 Булевая логика
+
+// 8 Функции
+
