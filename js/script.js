@@ -120,3 +120,15 @@
 // cars[0] = 'Порш'
 // cars[cars.length] = 'Мазда'
 // console.log(cars)
+
+// 10 Циклы
+const cars = ['Мазда', 'Мерседес', 'Киа']
+
+// for (let i = 0; i < cars.length; i++) {
+// 	const car = cars[i]
+// 	console.log(car)
+// }
+
+for (let car of cars) {
+	console.log(car)
+}
