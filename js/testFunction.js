@@ -4,13 +4,14 @@
 
 // console.log(people(21))
 
-const peoples = [
-	{ name: 'Роман', budget: 4200, age: 21 },
-	{ name: 'Евгений', budget: 3500, age: 12 },
-	{ name: 'Дмитрий', budget: 1700, age: 22 }
-]
+// const peoples = [
+// 	{ name: 'Роман', budget: 4200, age: 21 },
+// 	{ name: 'Евгений', budget: 3500, age: 12 },
+// 	{ name: 'Дмитрий', budget: 1700, age: 22 }
+// ]
 
 // const arrayBudget = (value) => {
+
 // 	return peoples.map((person) => person.budget * value)
 // }
 
@@ -23,3 +24,16 @@ const peoples = [
 // }
 
 // console.log(peopleFiltered(3700, 32));
+
+// Функция которая умножает бюджет на значение из пропса и потом из массива людей вернуть сумму результатов этой функции.
+
+// const arrayBudget = (value) => {
+// 	return value * 1000
+// }
+
+// const sumArray = peoples.reduce((acc, person) => {
+// 	return acc += arrayBudget(person.budget)
+// }, 0)
+
+// console.log(sumArray);
+
