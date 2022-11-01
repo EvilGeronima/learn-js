@@ -3,7 +3,7 @@
 // Function Declaration
 // function greet(myName) {
 // 	console.log('Привет -', myName);
-}
+// }
 
 // Function Expression
 // const greet2 = function greet2(myName) {
@@ -33,27 +33,27 @@
 
 // 3 Стрелочные функции
 
-function greet(myName) {
-	console.log('Привет -', myName);
-}
+// function greet(myName) {
+// 	console.log('Привет -', myName);
+// }
 
-const arrow = (myName, age) => {
-	console.log('Привет -', myName, age);
-}
+// const arrow = (myName, age) => {
+// 	console.log('Привет -', myName, age);
+// }
 
-const arrow2 = myName => {
-	console.log('Привет -', myName);
-}
+// const arrow2 = myName => {
+// 	console.log('Привет -', myName);
+// }
 
-arrow2('Роман')
+// arrow2('Роман')
 
-const pow2 = num => {
-	return num ** 2
-}
+// const pow2 = num => {
+// 	return num ** 2
+// }
 
-const pow3 = num => num ** 2
+// const pow3 = num => num ** 2
 
-console.log(pow2(5));
+// console.log(pow2(5));
 
 
 

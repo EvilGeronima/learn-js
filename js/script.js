@@ -30,11 +30,11 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 
 // Массив объектов
 
-const people = [
-	{ name: 'Роман', budget: 4200 },
-	{ name: 'Евгений', budget: 6500 },
-	{ name: 'Дмитрий', budget: 1200 }
-]
+// const people = [
+// 	{ name: 'Роман', budget: 4500 },
+// 	{ name: 'Евгений', budget: 6500 },
+// 	{ name: 'Дмитрий', budget: 1000 }
+// ]
 
 // let findedPerson
 
@@ -57,7 +57,7 @@ const people = [
 
 // console.log(person)
 
-// const person = people.find(person => person.budget === 3500)
+// const person = people.find(person => person.budget === 6500)
 
 // console.log(person)
 
@@ -67,20 +67,42 @@ const people = [
 // 	return car.toUpperCase()
 // })
 
-const pow2 = num => num ** 2
-// constsqrt = num => Math.sqrt(num)
-
-// const pow2Fib = fib.map(pow2).map(Math.sqrt)
-const pow2Fib = fib.map(pow2)
-const filteredNumvers = pow2Fib.filter(num => num > 20)
-console.log(filteredNumvers)
-
-// console.log(pow2Fib)
-
 // console.log(upperCaseCars)
 // console.log(cars)
 
 
+// const pow2 = num => num ** 2
+// const sqrt = num => Math.sqrt(num)
+
+// const pow2Fib = fib.map(pow2).map(Math.sqrt)
+// const pow2Fib = fib.map(pow2)
+// const filteredNumvers = pow2Fib.filter(num => num > 20)
+// console.log(pow2Fib)
+// console.log(filteredNumvers)
+
+// console.log(pow2Fib)
+
+
+const people = [
+	{ name: 'Роман', budget: 4200 },
+	{ name: 'Евгений', budget: 3500 },
+	{ name: 'Дмитрий', budget: 1700 }
+]
+
+const allBudget = people.reduce((acc, person) => {
+	if (person.budget > 2000) {
+		acc += person.budget
+	}
+	return acc
+}, 0)
+
+
+const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => {
+	acc += person.budget
+	return acc
+}, 0)
+
+console.log(allBudget);
 
 
 
