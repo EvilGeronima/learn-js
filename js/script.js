@@ -1,4 +1,4 @@
-// Массивы 
+// Массивы
 
 const cars = ['Мазда', 'Форд', 'БМВ', 'Мерседес']
 const fib = [1, 1, 2, 3, 5, 8, 13]
@@ -23,9 +23,67 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 // console.log(cars);
 // console.log(cars.reverse());
 
-const index = cars.indexOf('БМВ')
-cars[index] = 'Порш'
-console.log(cars)
+// const index = cars.indexOf('БМВ')
+// cars[index] = 'Порш'
+// console.log(cars)
+
+
+// Массив объектов
+
+const people = [
+	{ name: 'Роман', budget: 4200 },
+	{ name: 'Евгений', budget: 6500 },
+	{ name: 'Дмитрий', budget: 1200 }
+]
+
+// let findedPerson
+
+// for (const person of people) {
+// 	if (person.budget === 6500) {
+// 		findedPerson = person
+// 	}
+// }
+// console.log(findedPerson)
+
+
+
+// const index = people.findIndex(function (person) {
+// 	return person.budget === 6500
+// })
+
+// const person = people.find(function (person) {
+// 	return person.budget === 6500
+// })
+
+// console.log(person)
+
+// const person = people.find(person => person.budget === 3500)
+
+// console.log(person)
+
+// console.log(cars.includes('Мазда'))
+
+// const upperCaseCars = cars.map(car => {
+// 	return car.toUpperCase()
+// })
+
+const pow2 = num => num ** 2
+// constsqrt = num => Math.sqrt(num)
+
+// const pow2Fib = fib.map(pow2).map(Math.sqrt)
+const pow2Fib = fib.map(pow2)
+const filteredNumvers = pow2Fib.filter(num => num > 20)
+console.log(filteredNumvers)
+
+// console.log(pow2Fib)
+
+// console.log(upperCaseCars)
+// console.log(cars)
+
+
+
+
+
 
 
 // Задача 1
