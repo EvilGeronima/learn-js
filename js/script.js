@@ -83,26 +83,26 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 // console.log(pow2Fib)
 
 
-const people = [
-	{ name: 'Роман', budget: 4200 },
-	{ name: 'Евгений', budget: 3500 },
-	{ name: 'Дмитрий', budget: 1700 }
-]
+// const people = [
+// 	{ name: 'Роман', budget: 4200 },
+// 	{ name: 'Евгений', budget: 3500 },
+// 	{ name: 'Дмитрий', budget: 1700 }
+// ]
 
-const allBudget = people.reduce((acc, person) => {
-	if (person.budget > 2000) {
-		acc += person.budget
-	}
-	return acc
-}, 0)
+// const allBudget = people.reduce((acc, person) => {
+// 	if (person.budget > 2000) {
+// 		acc += person.budget
+// 	}
+// 	return acc
+// }, 0)
 
 
-const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => {
-	acc += person.budget
-	return acc
-}, 0)
+// const allBudget = people.filter(person => person.budget > 2000).reduce((acc, person) => {
+// 	acc += person.budget
+// 	return acc
+// }, 0)
 
-console.log(allBudget);
+// console.log(allBudget);
 
 
 
