@@ -37,3 +37,23 @@
 
 // console.log(sumArray);
 
+const peoples = [
+	{ name: "Роман", budget: 4500, age: 21 },
+	{ name: "Евгений", budget: 6500, age: 12 },
+	{ name: "Дмитрий", budget: 1000, age: 22 },
+	{ name: "Вика", budget: 54000, age: 54 },
+	{ name: "Аня", budget: 7634, age: 467 },
+];
+
+const hasLength = (value) => {
+	return value.length <= 5 ? true : false
+}
+
+const allPersons = peoples
+	.filter((person) => hasLength(person.name))
+	.map((person) => ({ name: person.name, budget: person.budget }))
+	.reduce((acc, person) => {
+		return acc *= person.budget
+	}, 1)
+
+console.log(allPersons);
