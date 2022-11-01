@@ -23,9 +23,14 @@ const fib = [1, 1, 2, 3, 5, 8, 13]
 // console.log(cars);
 // console.log(cars.reverse());
 
+const index = cars.indexOf('БМВ')
+cars[index] = 'Порш'
+console.log(cars)
+
+
 // Задача 1
 
-const text = 'Привет, мы изучаем JS'
-const reverseText = text.split('').reverse().join('')
+// const text = 'Привет, мы изучаем JS'
+// const reverseText = text.split('').reverse().join('')
 
-console.log(reverseText)
+// console.log(reverseText)
