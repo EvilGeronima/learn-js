@@ -6,7 +6,7 @@ const heading = document.getElementById('hello')
 
 // const heading2 = document.getElementsByTagName('h2')[0]
 
-// const heading2 = document.getElementsByClassName('heading-2')[0]
+//  const heading2 = document.getElementsByClassName('heading-2')[0]
 
 // const heading2 = document.querySelector('h2') // Всегда 1 элемент
 
@@ -14,16 +14,19 @@ const heading = document.getElementById('hello')
 
 const heading2 = document.querySelector('#sup-hello')// Всегда 1 элемент
 
-console.log(heading2)
-
-// const heading3 = heading2.nextElementSibling
+const heading3 = heading2.nextElementSibling
 
 const h2List = document.querySelectorAll('h2')
 
-console.log(h2List)
+// const heading3 = h2List[h2List.length - 1]
 
-const heading3 = h2List[h2List.length - 1]
-console.log(heading3)
+// console.log(heading)
+
+// console.log(heading2)
+
+// console.log(h2List)
+
+// console.log(heading3)
 
 
 // console.dir(heading.textContent)

@@ -20,42 +20,42 @@
 // 	console.log('After two seconds')
 // }, 2000)
 
-// const delay = (wait = 1000) => {
-// 	const promise = new Promise((resolve, reject) => {
-// 		setTimeout(() => {
-// 			resolve()
+const delay = (wait = 1000) => {
+	const promise = new Promise((resolve, reject) => {
+		setTimeout(() => {
+			console.log('test2')
+			resolve('сижу') // Удачная выполнение
+			reject('Что то пошло не так. Повторите попытку') // Ошибка
+		}, wait)
+	})
+	return promise
+}
 
-// 			//reject('Что то пошло не так. Повторите попытку')
-// 		}, wait)
-// 	})
-// 	return promise
-// }
+delay(2500)
+	.then((sit) => console.log('After 2,5 seconds', sit))
+	.catch(err => console.error(err))
+	.finally(() => console.log('Finally'))
 
-// delay(2500)
-// 	.then(() => console.log('After 2 seconds'))
-// 	.catch(err => console.error(err))
-// 	.finally(() => console.log('Finally'))
+console.log('test1')
 
 
-// const getData = () => new Promise(resolve => resolve([
-// 	1, 1, 2, 3, 5, 8, 13
-// ]))
+const getData = () => new Promise(resolve => resolve([
+	1, 1, 2, 3, 5, 8, 13
+]))
 
-// getData().then(data => console.log(data))
+getData().then(data => console.log(data))
 
-//колбэк объяснение
+const asyncExample = async () => {
 
-// async function asyncExample() { // уточнить по поводу асинк, как писать ее со стрелочной функции
+	try {
+		await delay(3000)
+		const data = await getData()
+		console.log('Data', data)
+	} catch (err) {
+		console.log(err) // мы ее обрабатываем
+	} finally {
+		console.log('Finally');
+	}
+}
 
-// 	try {
-// 		await delay(3000)
-// 		const data = await getData()
-// 		console.log('Data', data)
-// 	} catch (e) {
-// 		console.log(e);
-// 	} finally {
-// 		console.log('Finally');
-// 	}
-// }
-
-// asyncExample()
+asyncExample()
