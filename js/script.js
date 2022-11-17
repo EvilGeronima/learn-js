@@ -1,2 +1,7 @@
-const windowWidth = window.innerWidth // ширина окна браузера
-console.log(`Ширина окна браузера: ${windowWidth}px`);
+
+const mainElement = document.documentElement
+const mainElementWidth = mainElement.clientWidth
+const mainElementHeight = mainElement.clientHeight
+
+console.log(mainElementWidth)
+console.log(mainElementHeight)
